@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- link external style sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link font  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <div class="navbar p2pfont" style="height:80px;">
+      <h1>Wanna Be Operative ?</h1>
+      <span>Home</span>
+        <span>About</span>
+        <span>Contact</span>
+      <span>Recruitments</span>
+        <span>Acheivements</span>
+      
+  </div>
+
+<!-- BACKGROUND VIDEO CAROUSEL -->
+<div class="video-bg">
+  <video autoplay muted loop playsinline>
+    <source src="images/ii.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop playsinline>
+    <source src="images/uu.mp4">
+  </video>
+  <!-- <video autoplay muted loop playsinline>
+    <source src="images/oo.mp4">
+  </video> -->
+  <!-- <video autoplay muted loop playsinline>
+    <source src="images/hh.mp4">
+  </video> -->
+</div>
+
+<!-- GLASS LOGIN FORM -->
+<div class="login-glass">
+  <h2>SECURE ACCESS</h2>
+
+  <input type="email" placeholder="MIL-ID EMAIL" required>
+  <input type="password" placeholder="ACCESS CODE" required>
+
+  <input type="submit" id="button1" value="AUTHORIZE">
+</div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+  const dragBox = document.querySelector('.login-glass');
+
+  let isDragging = false;
+  let offsetX = 0;
+  let offsetY = 0;
+
+  dragBox.style.position = 'absolute';
+  dragBox.style.cursor = 'move';
+
+  dragBox.addEventListener('mousedown', startDrag);
+  dragBox.addEventListener('touchstart', startDrag, { passive: false });
+
+  function startDrag(e) {
+    isDragging = true;
+
+    const event = e.touches ? e.touches[0] : e;
+    const rect = dragBox.getBoundingClientRect();
+
+    offsetX = event.clientX - rect.left;
+    offsetY = event.clientY - rect.top;
+
+    document.addEventListener('mousemove', drag);
+    document.addEventListener('touchmove', drag, { passive: false });
+    document.addEventListener('mouseup', stopDrag);
+    document.addEventListener('touchend', stopDrag);
+  }
+
+  function drag(e) {
+    if (!isDragging) return;
+    e.preventDefault();
+
+    const event = e.touches ? e.touches[0] : e;
+
+    dragBox.style.left = event.clientX - offsetX + 'px';
+    dragBox.style.top  = event.clientY - offsetY + 'px';
+  }
+
+  function stopDrag() {
+    isDragging = false;
+    document.removeEventListener('mousemove', drag);
+    document.removeEventListener('touchmove', drag);
+    document.removeEventListener('mouseup', stopDrag);
+    document.removeEventListener('touchend', stopDrag);
+  }
+</script>
+
+  </body>
+</html>

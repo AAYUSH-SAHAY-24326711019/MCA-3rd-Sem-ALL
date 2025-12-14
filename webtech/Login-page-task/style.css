@@ -1,0 +1,263 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+
+/* font */
+.p2pfont {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color:rgb(12, 217, 12);
+}
+
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #000; /* deep black background */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 20px;
+  font-family: system-ui, sans-serif;
+}
+
+/* NAVBAR GLASS */
+.navbar {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  padding: 16px 36px;
+
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.8),
+    inset 0 1px 1px rgba(255, 255, 255, 0.3);
+
+  color: rgba(255, 255, 255, 0.85);
+  overflow: hidden;
+}
+
+/* LIQUID LIGHT REFLECTION */
+.navbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 30% 20%,
+      rgba(255, 255, 255, 0.35),
+      transparent 45%
+    );
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* MOVING LIQUID FLOW */
+.navbar::after {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background:
+    linear-gradient(
+      120deg,
+      transparent 40%,
+      rgba(231, 5, 5, 0.36),
+      transparent 60%
+    );
+  animation: liquidFlow 6s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes liquidFlow {
+  from {
+    transform: translateX(-30%) translateY(-30%);
+  }
+  to {
+    transform: translateX(30%) translateY(30%);
+  }
+}
+
+/* NAV ITEMS */
+.navbar span {
+  position: relative;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.navbar span:hover {
+  opacity: 1;
+  color:rgb(131, 255, 6)
+}
+
+/* GRAIN / NOISE */
+.navbar::marker {
+  display: none;
+}
+
+.navbar::selection {
+  background: transparent;
+}
+
+/* ---------------- ROOT ---------------- */
+:root {
+  --glow-green: #7cff00;
+  --glass-light: rgba(255, 255, 255, 0.18);
+  --glass-dark: rgba(0, 0, 0, 0.45);
+}
+
+/* ---------------- VIDEO BACKGROUND ---------------- */
+.video-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.video-bg video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fadeVideo 16s infinite;
+}
+
+.video-bg video:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.video-bg video:nth-child(2) {
+  animation-delay: 8s;
+}
+
+@keyframes fadeVideo {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  40% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* ---------------- LOGIN GLASS ---------------- */
+.login-glass {
+  position: fixed;
+  z-index: 10;
+  width: 300px;
+  margin: 12vh auto;
+
+  padding: 32px;
+  border-radius: 18px;
+
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(130%);
+
+  background: var(--glass-light);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  box-shadow:
+    0 0 40px rgba(0, 0, 0, 0.6),
+    inset 0 1px 1px rgba(255, 255, 255, 0.3);
+
+  animation: glassShift 16s infinite;
+}
+
+/* GLASS MOOD TRANSITION (SYNCED WITH VIDEOS) */
+@keyframes glassShift {
+  0% {
+    background: var(--glass-light);
+    border-color: rgba(255,255,255,0.25);
+  }
+  40% {
+    background: var(--glass-light);
+  }
+  50% {
+    background: var(--glass-dark);
+    border-color: rgba(124,255,0,0.3);
+  }
+  90% {
+    background: var(--glass-dark);
+  }
+  100% {
+    background: var(--glass-light);
+  }
+}
+
+/* ---------------- TEXT ---------------- */
+.login-glass h2 {
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #eaffea;
+  text-shadow: 0 0 6px rgba(124,255,0,0.4);
+}
+
+/* ---------------- INPUTS ---------------- */
+.login-glass input {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 12px 14px;
+
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(124,255,0,0.35);
+  border-radius: 10px;
+
+  color: #eaffea;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+  outline: none;
+}
+
+.login-glass input::placeholder {
+  color: rgba(200, 255, 200, 0.5);
+}
+
+/* ---------------- GLOWSTICK BUTTON ---------------- */
+.login-glass #button1 {
+  width: 100%;
+  padding: 14px;
+
+  background: transparent;
+  border-radius: 12px;
+  border: 1px solid var(--glow-green);
+
+  color: var(--glow-green);
+  font-weight: 600;
+  letter-spacing: 2px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 0 10px rgba(124,255,0,0.6),
+    inset 0 0 10px rgba(124,255,0,0.2);
+
+  transition: all 0.25s ease;
+}
+
+/* BUTTON HOVER = GLOWSTICK IGNITION */
+.login-glass #button1:hover {
+  background: rgba(124,255,0,0.15);
+  box-shadow:
+    0 0 20px rgba(124,255,0,0.9),
+    0 0 40px rgba(124,255,0,0.5);
+  transform: translateY(-1px);
+}
+
+.navbar h1{
+    color:#ff7200;
+    
+}
+.navbar h1:hover{
+    color:#7cff00
+}
