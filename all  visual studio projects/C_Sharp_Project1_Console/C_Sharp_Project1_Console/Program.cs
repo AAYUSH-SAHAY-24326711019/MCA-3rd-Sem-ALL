@@ -183,3 +183,53 @@ class Marks
         mk2.display();
     }
 }
+
+//naming conventions
+/*
+ 1. cannot be a number
+2. can be a letter / underscore then a number
+3. there must not be any special character
+4. variable name must not have a blank space , do it by the underscore
+5. name of the variable must be unique , different scope then it is possible.
+6. name of the variable any number of characters can be given.
+7. name of the variable must define its purpose.
+8. Do not use any keywords as the variable name.
+9. variable name must not start with a $symbol.
+10. This is a case sensitive language.
+11.
+
+variable : value type store value
+refernce type : points to other value in memory/ store the memory (java has alot of reference variables).
+Contains address than the data. This variable stores data address. It is pointer type.
+Memory location can be reffered by more than reference variable , but have the same type.
+
+centrallised memory location , change of value makes the changes in the other refernce variables
+
+Dynamic variable.
+c: void pointer that could store the location for any data type
+it has no restriction , its value will change
+
+id=1;
+id="1001; This is a general purpose variable which value could change.
+at the runtime it will change the value
+
+dynamic d = "sample"; (it is a string type and all the string related functions are applicable to it)
+it will inherit the base data type and utilise the attributes / functionality related to it.
+
+int length = d.length;
+must use it responsibility according to the requirement
+when the function overloading is done , it will reduce the number of the overloaded functions.
+it must be given the parameters
+
+keyboard entry is readline. it is like the java , takes input as a string.
+like the scanner class has the specific functions according to datatype to take the input
+we need to typecast each time.
+
+eg. name = console.ReadLine();
+eg. number = Convert.ToInt32(Console.ReadLine());
+dynamic type: change datatype accordingly like in python
+
+
+problemtake name and rank and show on the screen and make the program
+Tennis(Name . Rank), take the input from the user through readline.
+ */
