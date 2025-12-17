@@ -173,7 +173,7 @@ class Marks
         Console.WriteLine("English :" + engMarks + "\tMaths :" + mathsMarks + "\tPhysics :" + phyMarks+
             "\n\n Serial Number of Students :"+Marks.dispNumberStudents());
     }
-    public static void Main()
+    public static void Main3()
     {
         Marks mk1 = new Marks();
         mk1.init(77, 85, 92);

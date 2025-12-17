@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Dell\\Desktop\\MCA-3rd-Sem-ALL\\all  visual studio projects\\C_Sharp_Project1_Console\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{30AAAEC3-2D4D-3CDA-E986-CDDEF6A6EA85}|C_Sharp_Project1_Console\\C_Sharp_Project1_Console.csproj|c:\\users\\dell\\desktop\\mca-3rd-sem-all\\all  visual studio projects\\c_sharp_project1_console\\c_sharp_project1_console\\program2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30AAAEC3-2D4D-3CDA-E986-CDDEF6A6EA85}|C_Sharp_Project1_Console\\C_Sharp_Project1_Console.csproj|solutionrelative:c_sharp_project1_console\\program2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{30AAAEC3-2D4D-3CDA-E986-CDDEF6A6EA85}|C_Sharp_Project1_Console\\C_Sharp_Project1_Console.csproj|c:\\users\\dell\\desktop\\mca-3rd-sem-all\\all  visual studio projects\\c_sharp_project1_console\\c_sharp_project1_console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{30AAAEC3-2D4D-3CDA-E986-CDDEF6A6EA85}|C_Sharp_Project1_Console\\C_Sharp_Project1_Console.csproj|solutionrelative:c_sharp_project1_console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,12 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "program2.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\MCA-3rd-Sem-ALL\\all  visual studio projects\\C_Sharp_Project1_Console\\C_Sharp_Project1_Console\\program2.cs",
+              "RelativeDocumentMoniker": "C_Sharp_Project1_Console\\program2.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\MCA-3rd-Sem-ALL\\all  visual studio projects\\C_Sharp_Project1_Console\\C_Sharp_Project1_Console\\program2.cs*",
+              "RelativeToolTip": "C_Sharp_Project1_Console\\program2.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T02:49:18.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\MCA-3rd-Sem-ALL\\all  visual studio projects\\C_Sharp_Project1_Console\\C_Sharp_Project1_Console\\Program.cs",
               "RelativeDocumentMoniker": "C_Sharp_Project1_Console\\Program.cs",
               "ToolTip": "C:\\Users\\Dell\\Desktop\\MCA-3rd-Sem-ALL\\all  visual studio projects\\C_Sharp_Project1_Console\\C_Sharp_Project1_Console\\Program.cs",
               "RelativeToolTip": "C_Sharp_Project1_Console\\Program.cs",
-              "ViewState": "AgIAAN0AAAAAAAAAAAAAAOkAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAAAK8AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-11T02:54:59.84Z",
               "EditorCaption": ""
