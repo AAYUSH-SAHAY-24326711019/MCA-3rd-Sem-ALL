@@ -1,3 +1,6 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="program3.cs" />
+  </Folder>
   <Project Path="C_Sharp_Project1_Console/C_Sharp_Project1_Console.csproj" />
 </Solution>

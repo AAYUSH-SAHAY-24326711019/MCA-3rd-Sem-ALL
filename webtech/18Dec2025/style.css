@@ -1,0 +1,82 @@
+.Profile{
+    border:2px solid black;
+    height:400px;
+    margin-top: 32px;
+}
+
+
+.Profile .left-for-image{
+    border:2px solid black;
+    height:400px;
+    width:400px;
+}
+
+
+
+
+
+
+
+.nav-bar{
+    border:2px solid black;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.nav-bar a{
+    font-size: 25px;
+    text-decoration: none;
+    color:#000;
+    
+}
+
+.nav-bar .nav-element a:hover {
+   
+    font-size: 32px;
+    background-color: aqua;
+}
+
+
+
+
+
+.container .component{
+    
+    height:120px;
+    animation:Cimage 8s infinite;
+}
+.container .unk{
+    
+    height:120px;
+    /* animation:Cimage 8s infinite; */
+}
+
+@keyframes Cimage{
+0%{
+    width:10%;
+    background-color: rgba(168, 0, 0, 0.562);
+}
+25%{
+    width:35%;
+    background-color: rgb(231, 162, 1);
+}
+50%
+{
+    width:55%;
+    background-color: rgb(255, 157, 0);
+}
+75%
+{
+    width:70%;
+    background-color: rgb(139, 240, 57);
+}
+100%
+{
+    width:100%;
+    background-color: rgb(26, 255, 0);
+}
+}

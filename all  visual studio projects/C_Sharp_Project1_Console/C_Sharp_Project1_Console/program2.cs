@@ -58,7 +58,7 @@ its alternative is the switch case.
 public class Grades
 {
 
-    public static void Main() {
+    public static void Main22() {
         Console.WriteLine("user enter your marks");
         int marks = Convert.ToInt16(Console.ReadLine());
 
