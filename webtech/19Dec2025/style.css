@@ -1,0 +1,23 @@
+.container{
+    width:100%;
+    height:300px;
+    background-color:purple;
+    border:2px solid black;
+    display:flex;
+    /* flex-direction: row; */
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+
+}
+
+.container .itembox{
+    width: 200px;
+    height:200px;
+    background-color:tomato;
+    color:white;
+    border:2px solid black;
+    text-align:center;
+    border-top-width:25px;
+
+}
