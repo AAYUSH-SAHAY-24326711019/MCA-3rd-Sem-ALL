@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ===== GLOBAL ===== */
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1a1a1a, #0b0b0b, #000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #fff;
+}
+
+/* ===== GLASS CARD ===== */
+.login-glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+}
+
+/* ===== FORM ===== */
+.form-label {
+  color: #dcdcdc;
+}
+
+.form-control {
+  background: rgba(0,0,0,0.45);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #fff;
+}
+
+.form-control:focus {
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border-color: #0d6efd;
+  box-shadow: none;
+}
+
+/* ===== OVERLAY ===== */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* ===== MODAL ===== */
+.modal-glass {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(22px);
+  border-radius: 18px;
+  padding: 28px;
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.85);
+}
+
+.modal-subtext {
+  color: rgba(255,255,255,0.75);
+  font-size: 0.95rem;
+}
+
+/* ===== OTP ===== */
+.otp-modal {
+  width: 360px;
+}
+
+.otp-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.otp-box {
+  width: 44px;
+  height: 52px;
+  text-align: center;
+  font-size: 1.4rem;
+  background: rgba(0,0,0,0.5);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.otp-box:focus {
+  outline: none;
+  border-color: #0d6efd;
+}
+
+  </style>
+</head>
+
+<body>
+
+<!-- ================= REGISTRATION FORM ================= -->
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-lg-5">
+
+      <div class="login-glass p-4">
+        <h4 class="text-center mb-4">Registration Request</h4>
+
+        <form id="registerForm">
+          <div class="mb-3">
+            <label class="form-label">Email address</label>
+            <input type="email" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Mobile number</label>
+            <input type="tel" class="form-control" placeholder="+91XXXXXXXXXX" required>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">
+            Submit Registration
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= NOTIFICATION MODAL ================= -->
+<div id="notifyOverlay" class="overlay d-none">
+  <div class="modal-glass text-center">
+
+    <p class="mb-2">
+      Your registration request has been submitted.
+    </p>
+
+    <p class="modal-subtext mb-4">
+      Admin will notify you soon after verification.
+    </p>
+
+    <button id="haveCodeBtn" class="btn btn-outline-light w-100">
+      I have the Code
+    </button>
+
+  </div>
+</div>
+
+<!-- ================= OTP MODAL ================= -->
+<div id="otpOverlay" class="overlay d-none">
+  <div class="modal-glass otp-modal text-center">
+
+    <h5 class="mb-4">Enter 6-Digit Verification Code</h5>
+
+    <div class="otp-wrapper mb-4">
+      <input class="otp-box" maxlength="1">
+      <input class="otp-box" maxlength="1">
+      <input class="otp-box" maxlength="1">
+      <input class="otp-box" maxlength="1">
+      <input class="otp-box" maxlength="1">
+      <input class="otp-box" maxlength="1">
+    </div>
+
+    <button class="btn btn-primary w-100">
+      Verify Code
+    </button>
+
+  </div>
+</div>
+
+<!-- ================= SCRIPT ================= -->
+<script>
+  const registerForm = document.getElementById("registerForm");
+  const notifyOverlay = document.getElementById("notifyOverlay");
+  const otpOverlay = document.getElementById("otpOverlay");
+  const haveCodeBtn = document.getElementById("haveCodeBtn");
+  const otpInputs = document.querySelectorAll(".otp-box");
+
+  registerForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    notifyOverlay.classList.remove("d-none");
+  });
+
+  haveCodeBtn.addEventListener("click", function () {
+    notifyOverlay.classList.add("d-none");
+    otpOverlay.classList.remove("d-none");
+    otpInputs[0].focus();
+  });
+
+  otpInputs.forEach((input, index) => {
+    input.addEventListener("input", () => {
+      if (input.value && index < otpInputs.length - 1) {
+        otpInputs[index + 1].focus();
+      }
+    });
+
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Backspace" && !input.value && index > 0) {
+        otpInputs[index - 1].focus();
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

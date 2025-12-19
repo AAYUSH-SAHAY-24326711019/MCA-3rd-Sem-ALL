@@ -1,0 +1,100 @@
+/* Login Page Css start */
+    /* Global dark background */
+body {
+  min-height: 100vh;
+  background: radial-gradient(
+    circle at top,
+    #1a1a1a,
+    #0b0b0b,
+    #000000
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+/* Glass Effect Start */
+/* Glass container */
+.login-glass {
+  background: rgba(255, 255, 255, 0.069);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.6),
+    inset 0 0 0.5px rgba(255, 255, 255, 0.3);
+  color: #eaeaea;
+}
+
+
+/* Glass Effect End */
+
+/* Form related start */
+.form-label {
+  color: #cccccc;
+  font-size: 0.9rem;
+}
+
+.form-control {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.form-control:focus {
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  border-color: #0d6efd;
+  box-shadow: none;
+}
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #d2d9e3;
+}
+
+/* Form related end */
+
+/* Login Page Css end */
+
+/* Registration Page Css Start */
+/* Notification glass card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #e0e0e0;
+}
+
+/* OTP inputs */
+.otp-inputs {
+  gap: 8px;
+}
+
+.otp-box {
+  width: 42px;
+  height: 48px;
+  text-align: center;
+  font-size: 1.2rem;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.otp-box:focus {
+  outline: none;
+  border-color: #0d6efd;
+}
+
+/* Registration Page Css end */
