@@ -60,7 +60,7 @@ The sum of the positive numbers :12*/
 
 class newTest2
 {
-    public static void Main()
+    public static void Main44()
     {
         int num1; int num2;
         num1 = num2 = 1;
