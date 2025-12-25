@@ -1,0 +1,11 @@
+// Special  variable name have the underscore and the dollar
+// There is no space in the variable name.
+
+// There is not to use the keyword.
+
+let _x =2;
+let $="Hello World";
+console.log($)
+
+// let // cannot be redeclared can be updated
+// const // cannot be redeclared cannot be updated
