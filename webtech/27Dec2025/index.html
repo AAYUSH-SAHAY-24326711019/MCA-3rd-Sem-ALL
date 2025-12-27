@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color:white;
+            background-color: rgb(156, 151, 151);
+        }
+        #program1 {
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <div id="program1">
+        <h4>Program 1</h4>
+        <form>
+        <label for="fname">First Name :</label>
+        <input type="text" id="fname" name="fname"><br/>
+        <label for="lname">Last Name :</label>
+        <input type="text" id="lname" name="lname"><br/>
+        <button onclick="dispName();">Display name</button>
+    </form>
+    </div>
+    <script>
+        //to make : click the button
+        //to make the display function
+        function dispName(){
+            // alert("running or not");
+            let fn = document.getElementById("fname").value;
+            // alert(fn);
+            let ln = document.getElementById("lname").value;
+
+            if(fn==""){
+                alert("Please enter your First Name");
+                return false;
+            }
+            if(ln==""){
+                alert("Please enter your Last Name");
+                return false;
+            }
+            alert(fn+" "+ln);
+            //This is the method of the dom 
+
+        }
+    </script>
+</body>
+</html>
