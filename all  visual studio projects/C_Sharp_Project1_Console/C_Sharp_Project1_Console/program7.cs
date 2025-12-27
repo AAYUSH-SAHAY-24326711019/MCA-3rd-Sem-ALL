@@ -33,7 +33,7 @@ namespace C_Sharp_Project1_Console
 
     class Program
     {
-        public static void Main()
+        public static void Main77()
         {
             Student s = new Student();
             s.setName("Aayush Sahay");

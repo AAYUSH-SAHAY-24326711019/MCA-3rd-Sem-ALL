@@ -1,0 +1,23 @@
+<!-- ================= login.html ================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body{background:radial-gradient(circle at top,#1f2937,#020617)}
+.glass{background:rgba(255,255,255,.08);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.15)}
+.liquid{box-shadow:inset 0 1px 1px rgba(255,255,255,.2),0 20px 40px rgba(0,0,0,.7)}
+</style>
+</head>
+<body class="text-gray-200 flex items-center justify-center min-h-screen">
+<div class="glass liquid w-96 p-8 rounded-2xl">
+<h2 class="text-2xl mb-6 text-center">Secure Login</h2>
+<input class="w-full mb-4 p-3 rounded-lg bg-black/40" placeholder="Email">
+<input type="password" class="w-full mb-6 p-3 rounded-lg bg-black/40" placeholder="Password">
+<a href="dashboard.html" class="block text-center py-3 rounded-lg bg-white/20 hover:bg-white/30">Login</a>
+<p class="text-sm text-center mt-4">No account? <a href="register.html" class="text-blue-400">Register</a></p>
+</div>
+</body>
+</html>

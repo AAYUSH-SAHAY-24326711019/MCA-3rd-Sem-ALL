@@ -12,7 +12,7 @@ default internal (self assembly accessible) , public (self + other assembly acce
  */
 
 
-public class variable{
+public class variables{
 
 	public static void Main31()
 	{ // variation 1
