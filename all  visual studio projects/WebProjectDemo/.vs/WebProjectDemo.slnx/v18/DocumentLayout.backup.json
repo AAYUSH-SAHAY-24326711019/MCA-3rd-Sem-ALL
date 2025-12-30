@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dell\\Desktop\\MCA-3rd-Sem-ALL\\all  visual studio projects\\WebProjectDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E66BFABC-7196-48A9-943C-74AA1B1DD98D}|WebProjectDemo\\WebProjectDemo.csproj|c:\\users\\dell\\desktop\\mca-3rd-sem-all\\all  visual studio projects\\webprojectdemo\\webprojectdemo\\webprojectdemo.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{E66BFABC-7196-48A9-943C-74AA1B1DD98D}|WebProjectDemo\\WebProjectDemo.csproj|solutionrelative:webprojectdemo\\webprojectdemo.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E66BFABC-7196-48A9-943C-74AA1B1DD98D}|WebProjectDemo\\WebProjectDemo.csproj|c:\\users\\dell\\desktop\\mca-3rd-sem-all\\all  visual studio projects\\webprojectdemo\\webprojectdemo\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E66BFABC-7196-48A9-943C-74AA1B1DD98D}|WebProjectDemo\\WebProjectDemo.csproj|solutionrelative:webprojectdemo\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E66BFABC-7196-48A9-943C-74AA1B1DD98D}|WebProjectDemo\\WebProjectDemo.csproj|c:\\users\\dell\\desktop\\mca-3rd-sem-all\\all  visual studio projects\\webprojectdemo\\webprojectdemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E66BFABC-7196-48A9-943C-74AA1B1DD98D}|WebProjectDemo\\WebProjectDemo.csproj|solutionrelative:webprojectdemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E66BFABC-7196-48A9-943C-74AA1B1DD98D}|WebProjectDemo\\WebProjectDemo.csproj|c:\\users\\dell\\desktop\\mca-3rd-sem-all\\all  visual studio projects\\webprojectdemo\\webprojectdemo\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E66BFABC-7196-48A9-943C-74AA1B1DD98D}|WebProjectDemo\\WebProjectDemo.csproj|solutionrelative:webprojectdemo\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E66BFABC-7196-48A9-943C-74AA1B1DD98D}|WebProjectDemo\\WebProjectDemo.csproj|c:\\users\\dell\\desktop\\mca-3rd-sem-all\\all  visual studio projects\\webprojectdemo\\webprojectdemo\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E66BFABC-7196-48A9-943C-74AA1B1DD98D}|WebProjectDemo\\WebProjectDemo.csproj|solutionrelative:webprojectdemo\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E66BFABC-7196-48A9-943C-74AA1B1DD98D}|WebProjectDemo\\WebProjectDemo.csproj|c:\\users\\dell\\desktop\\mca-3rd-sem-all\\all  visual studio projects\\webprojectdemo\\webprojectdemo\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E66BFABC-7196-48A9-943C-74AA1B1DD98D}|WebProjectDemo\\WebProjectDemo.csproj|solutionrelative:webprojectdemo\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\MCA-3rd-Sem-ALL\\all  visual studio projects\\WebProjectDemo\\WebProjectDemo\\Program.cs",
+              "RelativeDocumentMoniker": "WebProjectDemo\\Program.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\MCA-3rd-Sem-ALL\\all  visual studio projects\\WebProjectDemo\\WebProjectDemo\\Program.cs",
+              "RelativeToolTip": "WebProjectDemo\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAEwBYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T04:43:47.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\MCA-3rd-Sem-ALL\\all  visual studio projects\\WebProjectDemo\\WebProjectDemo\\Pages\\About.cshtml",
+              "RelativeDocumentMoniker": "WebProjectDemo\\Pages\\About.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\MCA-3rd-Sem-ALL\\all  visual studio projects\\WebProjectDemo\\WebProjectDemo\\Pages\\About.cshtml",
+              "RelativeToolTip": "WebProjectDemo\\Pages\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-29T04:41:51.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\MCA-3rd-Sem-ALL\\all  visual studio projects\\WebProjectDemo\\WebProjectDemo\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "WebProjectDemo\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\MCA-3rd-Sem-ALL\\all  visual studio projects\\WebProjectDemo\\WebProjectDemo\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "WebProjectDemo\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T04:40:20.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\MCA-3rd-Sem-ALL\\all  visual studio projects\\WebProjectDemo\\WebProjectDemo\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebProjectDemo\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\MCA-3rd-Sem-ALL\\all  visual studio projects\\WebProjectDemo\\WebProjectDemo\\Pages\\Index.cshtml",
+              "RelativeToolTip": "WebProjectDemo\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-29T04:37:01.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WebProjectDemo",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\MCA-3rd-Sem-ALL\\all  visual studio projects\\WebProjectDemo\\WebProjectDemo\\WebProjectDemo.csproj",
+              "RelativeDocumentMoniker": "WebProjectDemo\\WebProjectDemo.csproj",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\MCA-3rd-Sem-ALL\\all  visual studio projects\\WebProjectDemo\\WebProjectDemo\\WebProjectDemo.csproj",
+              "RelativeToolTip": "WebProjectDemo\\WebProjectDemo.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-29T04:39:36.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\MCA-3rd-Sem-ALL\\all  visual studio projects\\WebProjectDemo\\WebProjectDemo\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WebProjectDemo\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\MCA-3rd-Sem-ALL\\all  visual studio projects\\WebProjectDemo\\WebProjectDemo\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WebProjectDemo\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-29T04:39:13.324Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

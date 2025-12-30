@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    reg exp : mobile
+    name be only character
+    <button id="btn1" onclick="show()">
+        Show
+    </button>
+
+    <button id="btn1" onclick="hide()">
+        Hide
+    </button>
+
+    <div id="div1" style="display:none;
+    border:1px solid red; padding:30px; margin:30px">
+        Content in Div1
+    </div>
+
+    <hr>
+
+    <p>Message / Content changes</p>
+
+    <form action="" method="get">
+        <label for="password">Password Check</label>
+        <input type="password" name="password" id="password">
+        <input type="button" onclick="validate()" value="Validate">
+    </form>
+    <div id="msg">
+
+    </div>
+
+<script>
+
+    function validate(){
+    let password = document.getElementById("password").value;
+    //check the empty
+   document.getElementById("msg").innerHTML="<p style='color:red;'>you have entered password :</p>"+password;
+   //password lenght not less than 6 characters
+   let len = password.length;
+    //    alert(len);
+    if(len<6){
+        document.getElementById("msg").innerHTML="<p style='color:red;'>please enter password of length 6</p>";
+    }
+
+
+}
+
+let btn1 = document.getElementByID("btn1");
+let btn2 = document.getElementByID("btn2");
+
+function show(){
+    document.getElementById("div1").style.display="block";
+}
+function hide(){
+    document.getElementById("div1").style.display="none";
+}
+</script>
+</body>
+</html>

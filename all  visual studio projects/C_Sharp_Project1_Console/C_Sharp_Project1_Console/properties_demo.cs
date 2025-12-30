@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Text;
 
 
@@ -42,7 +43,7 @@ namespace C_Sharp_Project1_Console
             }
         }
 
-        static void Main()
+        static void Main12()
         {
             properties_demo p = new properties_demo();
             p.X = 20;
@@ -119,3 +120,46 @@ and use the console.ReadKey(); to hold the screen
 
 
 */
+
+
+
+/*Date 29/12/2025*/
+class Demo
+{
+    
+
+    
+    static void Main()
+    {
+        int sum=0, rowsum = 0;
+        int[,] arr = new int[2, 4] { { 2, 2, 2, 2 }, { 3, 3, 3, 3 } };
+        int row, col = 0;
+        for (row=0; row < 2; row++)
+        {
+            rowsum = 0;
+            for (col = 0; col < 4; col++)
+            {
+                
+                Console.Write("{0}\t", arr[row, col]);
+                rowsum = rowsum + arr[row, col];
+            }Console.Write("Row Sum : {0}\n", rowsum);
+            
+
+            sum = sum + rowsum;
+
+        }Console.WriteLine("The sum of array is = {0}", sum);
+
+
+        // Program 2
+        //String[] src = new string[]
+        //{
+        //   "Marigold","Rose","Lotus","Larkspur"
+        //};
+
+        //String[] Info = src;
+        //foreach(String k in Info)
+        //{
+        //    Console.WriteLine(k[2]);
+        //}
+    }
+}
