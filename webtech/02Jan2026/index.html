@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Add the cdn from the jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <p>How to select the element of the place using jquery</p>
+    use the dollar sign and the method to hide and show
+
+    <p id="cimage">first j query program</p>
+    <p class="cim">Cimage College Patna</p>
+    
+
+    <script>
+        $(document).ready(function(){
+            $("#cimage").css({"color":"red",
+                              "background-color":"yellow"
+            });
+        });
+
+        $(document).ready(function(){
+            $(".cim").css({"color":"white",
+                              "background-color":"DarkBlue"
+            });
+        });
+    </script>
+
+
+
+
+</body>
+</html>
